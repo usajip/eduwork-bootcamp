@@ -1,0 +1,58 @@
+<p id="p1">Ini adalah paragraf</p>
+<input type="text" id="input1" name="input1">
+<button onclick="validateName()" type="submit">Submit</button>
+<script>
+    function validateName(){
+        let name = document.getElementById('input1').value;
+        if(name == ""){
+            alert("Nama tidak boleh kosong");
+            return false;
+        }
+        return true;
+    }
+    document.getElementById('p1').innerHTML = "Ini adalah paragraf baru";
+
+    // KOmentar satu baris
+    /* bariss statusbar
+    baris dua */
+    // kkjlkadsj
+    // lkjdalsk
+    var variabel1 = 1;
+    let variabelLet = 2;
+    const variabelConst = 3;
+
+    var variableAngka = 9;
+    let variableString = "Ini string";
+    let variabelAngkaYangString = "12";
+    let variableBolean = false;
+    var kosong;
+    var variableNull = null;
+
+
+    let angka1 = 11;
+    let angkat2 = 5;
+
+    let hasil = angka1 + angkat2;
+    if(hasil > 10){
+        console.log("hasil lebih besar dari 10");
+    }else{
+        console.log("hasil lebih kecil dari 10");
+    }
+
+    for(let i = 1; i < 10; i++){
+        console.log("perulangan ke: "+i);
+    }
+
+    function greet(name){
+        return "Hello "+name;
+    }
+    console.log(greet("Eduwork"));
+
+    let fruits = ["apple", "banana", "orange"];
+
+    fruits.push("mango");
+
+    for(let i = 0; i < fruits.length; i++){ 
+        console.log(fruits[i]);
+    }
+</script>
